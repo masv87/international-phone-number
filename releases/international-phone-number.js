@@ -78,7 +78,7 @@
         });
         ctrl.$validators.internationalPhoneNumber = function(value) {
           if (!value) {
-            return value;
+            return !!value;
           } else {
             return element.intlTelInput("isValidNumber");
           }
