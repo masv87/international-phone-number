@@ -79,7 +79,7 @@ angular.module("internationalPhoneNumber", []).directive 'internationalPhoneNumb
 
     ctrl.$validators.internationalPhoneNumber = (value) ->
       if !value
-        return value
+        return !!value
       else
         return element.intlTelInput("isValidNumber")
 
