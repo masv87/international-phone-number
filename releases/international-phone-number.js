@@ -65,7 +65,8 @@
             return value;
           } else {
             $timeout(function() {
-              return element.intlTelInput('setNumber', value);
+              element.intlTelInput('setNumber', value);
+              return read();
             }, 0);
             return element.val();
           }

@@ -70,6 +70,7 @@ angular.module("internationalPhoneNumber", []).directive 'internationalPhoneNumb
       else
         $timeout () ->
           element.intlTelInput 'setNumber', value
+          read()
         , 0
         return element.val()
 
